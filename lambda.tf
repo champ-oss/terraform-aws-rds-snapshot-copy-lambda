@@ -16,5 +16,5 @@ module "rds_snapshot_copy_lambda" {
   ecr_tag             = var.rds_snapshot_copy_docker_tag
   timeout             = var.timeout
   vpc_id              = var.vpc_id # eni delete resource bug https://github.com/hashicorp/terraform-provider-aws/issues/10329
-  environment = {}
+  environment         = {}
 }
