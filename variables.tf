@@ -35,7 +35,7 @@ variable "schedule_expression" {
 variable "rds_snapshot_copy_docker_tag" {
   description = "Docker tag of rds snapshot share code to deploy"
   type        = string
-  default     = "2026720c06b88e2cd963ad3f8db5a54c414fd08f"
+  default     = "9ffc59bfb0bbf515ee6f9c9e4fb62f5b61e0ad0d"
 }
 
 variable "timeout" {
@@ -48,4 +48,10 @@ variable "lambda_policy" {
   type        = any
   description = "point to data.aws_iam_policy_document.custom.json"
   default     = null
+}
+
+variable "kms_key_id" {
+  description = "kms key id"
+  type        = string
+  default     = ""
 }
