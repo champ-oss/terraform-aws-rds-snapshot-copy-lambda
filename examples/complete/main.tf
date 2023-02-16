@@ -2,10 +2,6 @@ provider "aws" {
   region = "us-east-2"
 }
 
-locals {
-  git = "terraform-rds-snapshot"
-}
-
 data "aws_vpcs" "this" {
   tags = {
     purpose = "vega"
