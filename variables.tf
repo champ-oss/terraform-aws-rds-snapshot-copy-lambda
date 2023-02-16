@@ -35,7 +35,7 @@ variable "schedule_expression" {
 variable "rds_snapshot_copy_docker_tag" {
   description = "Docker tag of rds snapshot share code to deploy"
   type        = string
-  default     = "f8568204826ad99132a247aa9d5858780791dafc"
+  default     = "9a3c8a65493fce745be53a8065b8c5fda6c95386"
 }
 
 variable "timeout" {
