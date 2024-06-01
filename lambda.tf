@@ -1,7 +1,7 @@
 
 
 module "rds_snapshot_copy_lambda" {
-  source              = "github.com/champ-oss/terraform-aws-lambda.git?ref=v1.0.142-273b055"
+  source              = "github.com/champ-oss/terraform-aws-lambda.git?ref=v1.0.143-ad06349"
   git                 = var.git
   name                = "rds-snapshot-copy-${random_string.identifier.result}"
   tags                = merge(local.tags, var.tags)
